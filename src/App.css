@@ -1,0 +1,54 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Ysabeau+SC:wght@600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+.pages{
+    color:white;
+    position:relative;
+    transition: all 0.4s;
+}
+.pages:hover,.active{
+    color:#FFD60A;
+}
+.pages::after,.active::after{
+    content:"";
+    height:3px;
+    width:100%;
+    background: #FFD60A;
+    position: absolute;
+    opacity: 0;
+    left:0;
+    bottom: -10px;
+    transition: all 0.2s;
+    pointer-events: none;
+}
+.pages:hover::after,
+.active::after
+{
+    opacity: 1;
+}
+.active{
+
+}
+
+.custom-loader {
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    padding:1px;
+    background:conic-gradient(#0000 10%,#F4E625) content-box;
+    -webkit-mask:
+      repeating-conic-gradient(#0000 0deg,#000 1deg 20deg,#0000 21deg 36deg),
+      radial-gradient(farthest-side,#0000 calc(100% - 9px),#000 calc(100% - 8px));
+    -webkit-mask-composite: destination-in;
+    mask-composite: intersect;
+    animation:s4 1s infinite steps(10);
+  }
+  @keyframes s4 {to{transform: rotate(1turn)}}
