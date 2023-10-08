@@ -33,18 +33,21 @@ interface, enabling seamless navigation through various service categories.
    ![Screenshot (1397)](https://github.com/jayeshagrawal1/HomeMaid/assets/76203067/5e5a2539-789d-43c9-a716-92ecc384a0be)
 
    ![Screenshot (1398)](https://github.com/jayeshagrawal1/HomeMaid/assets/76203067/21575753-e9c5-461d-b982-4c2a002c548f)
+   
 
    ### Service
 
    ![Screenshot (1400)](https://github.com/jayeshagrawal1/HomeMaid/assets/76203067/63a0fe70-7fed-4397-855a-a29ff890f3fd)
 
    ![Screenshot (1404)](https://github.com/jayeshagrawal1/HomeMaid/assets/76203067/cb19cd86-5d2d-4c2c-ac32-b5ded40ba843)
+   
 
    ### Login SignUp
    
    ![Screenshot (1402)](https://github.com/jayeshagrawal1/HomeMaid/assets/76203067/d28384d2-af5a-47c5-916f-7346eae43232)
 
    ![Screenshot (1403)](https://github.com/jayeshagrawal1/HomeMaid/assets/76203067/74ef3a1b-355e-4e2b-b214-c53d040e8ae9)
+   
 
    ### Contact Us 
 
