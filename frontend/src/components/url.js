@@ -1,1 +1,1 @@
-export const baseUrl=`https://homemaid.onrender.com/`
+export const baseUrl=`https://home-maid.vercel.app`
