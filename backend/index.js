@@ -16,7 +16,14 @@ connectDB(process.env.DATABASE_URL)
     .catch((err)=> console.log("Error in connection mongo ",err));
 
 // middleware
-app.use(cors());
+const corsConfig={
+    origin: "*",
+    Credential:true,
+    methods:["GET","POST","PUT","DELETE"],
+}
+app.options("",cors(corsConfig));
+app.use(cors(corsConfig));
+
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
