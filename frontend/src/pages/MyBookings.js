@@ -1,7 +1,7 @@
 import React, { useEffect, useState} from 'react'
 import Spinner from "../components/Spinner"
 import BookingCard from "../components/BookingCard"
-
+import { baseUrl } from '../components/url'
 
 const MyBookings = () => {
 
@@ -10,7 +10,7 @@ const MyBookings = () => {
     const viewBookings = async () => {
         try {
             //get user info first
-            const res = await fetch('/getUser', {
+            const res = await fetch(`${baseUrl}/getUser`, {
                 method: "GET",
                 headers: {
                     Accept: "application/json",
