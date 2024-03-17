@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { AiOutlineEye,AiOutlineEyeInvisible } from 'react-icons/ai';
 import { toast } from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
+import { baseUrl } from './url';
 
 const SignupForm = () => {
 
@@ -30,7 +31,7 @@ const SignupForm = () => {
         e.preventDefault();
         const {first_name,last_name,email,password}=formData;
 
-        const res=await fetch(`/register`,{
+        const res=await fetch(`${baseUrl}/register`,{
             method:'POST',
             headers:{
                 "Content-Type":"application/json"

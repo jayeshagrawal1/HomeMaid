@@ -3,6 +3,7 @@ import {AiOutlineEye,AiOutlineEyeInvisible} from "react-icons/ai"
 import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'react-hot-toast';
 import { userContext } from '../App';
+import { baseUrl } from './url';
 
 const LoginForm = () => {
 
@@ -30,7 +31,7 @@ const LoginForm = () => {
         event.preventDefault();
         const {email,password}=formData;
         
-        const res=await fetch(`/signin`,{
+        const res=await fetch(`${baseUrl}/signin`,{
             method:"POST",
             headers:{
                 "Content-Type":"application/json",

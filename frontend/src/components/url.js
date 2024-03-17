@@ -1,0 +1,1 @@
+export const baseUrl=`https://homemaid.onrender.com/`

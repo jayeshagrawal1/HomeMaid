@@ -4,6 +4,7 @@ import payment from '../images/payment.png'
 import axios from 'axios'
 import { userContext} from '../App'
 import { useNavigate } from 'react-router-dom'
+import { baseUrl } from './url'
 
 const Popup = ({ serviceType, setTrigger, trigger }) => {
 
@@ -26,7 +27,7 @@ const Popup = ({ serviceType, setTrigger, trigger }) => {
             return;
         }
 
-        const { data: { order } } = await axios.post(`${window.location.origin}/payment/checkout`, {
+        const { data: { order } } = await axios.post(`${baseUrl}/payment/checkout`, {
             amount
         })
 
