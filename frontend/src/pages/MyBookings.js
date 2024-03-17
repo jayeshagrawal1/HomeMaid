@@ -25,7 +25,7 @@ const MyBookings = () => {
             // retrieving all bookings of current user
             const { email } = data;
             
-            const response=await fetch('/showBookings',{
+            const response=await fetch(`${baseUrl}/showBookings`,{
                 method:"GET",
                 headers: {
                     Accept: "application/json",
