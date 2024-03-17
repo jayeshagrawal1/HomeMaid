@@ -25,7 +25,9 @@ app.use(cookieParser());
 app.use(require('./routes/user'));  
 app.use(require('./routes/paymentRoute'))
 
-
+app.get("/",(req,res)=>{
+    res.json("Working Fine!");
+})
 
 app.listen(PORT, console.log('started succesfully server'));
 
