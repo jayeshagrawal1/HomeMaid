@@ -8,7 +8,7 @@ const PaymentSuccess = () => {
     const saveProductInfo = async () => {
         try {
             //get user info firsxt
-            const res = await fetch(`${window.location.origin}/getUser`, {
+            const res = await fetch(`/getUser`, {
                 method: "GET",
                 headers: {
                     Accept: "application/json",
@@ -25,7 +25,7 @@ const PaymentSuccess = () => {
             const refrence_id=urlElements[1];
             const {serviceType,duration,price}=JSON.parse(window.localStorage.getItem('userServiceCart'));
             
-            const response = await fetch(`${window.location.origin}/saveBooking`, {
+            const response = await fetch(`/saveBooking`, {
                 method: "POST",
                 headers: {
                     Accept: "application/json",

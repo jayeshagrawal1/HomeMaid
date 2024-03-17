@@ -8,7 +8,7 @@ const Navbar = () => {
     const { state, dispatch } = useContext(userContext);
 
     function logOutHandler() {
-        fetch(`${window.location.origin}/logout`, {
+        fetch(`/logout`, {
             method: 'GET',
             headers: {
                 "Content-Type": "application/json",

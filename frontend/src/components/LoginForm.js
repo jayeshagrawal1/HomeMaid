@@ -30,7 +30,7 @@ const LoginForm = () => {
         event.preventDefault();
         const {email,password}=formData;
         
-        const res=await fetch(`${window.location.origin}/signin`,{
+        const res=await fetch(`/signin`,{
             method:"POST",
             headers:{
                 "Content-Type":"application/json",

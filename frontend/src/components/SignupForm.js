@@ -30,7 +30,7 @@ const SignupForm = () => {
         e.preventDefault();
         const {first_name,last_name,email,password}=formData;
 
-        const res=await fetch(`${window.location.origin}/register`,{
+        const res=await fetch(`/register`,{
             method:'POST',
             headers:{
                 "Content-Type":"application/json"
