@@ -50,7 +50,7 @@ const Verify = async (req, res) => {
         // Send JSON response containing the redirect URL
         res.status(200).json({
             success: true,
-            redirectUrl: `http://localhost:3000/paymentsuccess?reference=${razorpay_payment_id}`
+            redirectUrl: `${razorpay_payment_id}`
         });
     } else {
         res.status(400).json({
