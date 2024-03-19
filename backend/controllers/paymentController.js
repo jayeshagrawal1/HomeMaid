@@ -46,26 +46,15 @@ const Verify = async (req, res) => {
             razorpay_payment_id,
             razorpay_signature,
         });
-
-        // Send JSON response containing the redirect URL
-        res.status(200).json({
-            success: true,
-            redirectUrl: `${razorpay_payment_id}`
-        });
+        
+        res.redirect(
+            `http://localhost:3000/paymentsuccess?reference=${razorpay_payment_id}`
+        );
     } else {
         res.status(400).json({
             success: false,
         });
     }
-        
-    //     res.redirect(
-    //         `http://localhost:3000/paymentsuccess?reference=${razorpay_payment_id}`
-    //     );
-    // } else {
-    //     res.status(400).json({
-    //         success: false,
-    //     });
-    // }
 };
 
 module.exports = {
