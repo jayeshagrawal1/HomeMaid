@@ -53,7 +53,19 @@ const Popup = ({ serviceType, setTrigger, trigger }) => {
             }
         };
         const razor = new window.Razorpay(options);
-        razor.open();
+
+        razor.on('payment.success', function (response) {
+        // Handle successful payment
+        const { razorpay_payment_id } = response;
+            navigate(`/paymentsuccess?reference=${razorpay_payment_id}`);
+        });
+            razor.open();
+        }
+        catch (error) {
+            console.error('Error occurred during payment processing:', error);
+        }
+        
+        // razor.open();
     }
 
 
