@@ -48,7 +48,7 @@ const Verify = async (req, res) => {
         });
         
         res.redirect(
-            `https://home-maid.vercel.app/paymentsuccess?reference=${razorpay_payment_id}`
+            `http://localhost:3000/paymentsuccess?reference=${razorpay_payment_id}`
         );
     } else {
         res.status(400).json({

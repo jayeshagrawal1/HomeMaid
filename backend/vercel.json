@@ -13,4 +13,8 @@
             "methods":["GET","POST","PUT","PATCH","DELETE","OPTIONS"]
         }
     ]
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> af6d19cd28992370f1c87aaf3d2e1a326ebbd42e
