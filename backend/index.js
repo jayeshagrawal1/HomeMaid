@@ -22,12 +22,12 @@ connectDB(process.env.DATABASE_URL)
 //     methods:["GET","POST","PUT","DELETE"],
 // }
 
-app.use(cors({
-    origin: 'http://localhost:3000', // use your actual domain name (or localhost), using * is not recommended
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'HEAD', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Origin', 'X-Requested-With', 'Accept', 'x-client-key', 'x-client-token', 'x-client-secret', 'Authorization'],
-    credentials: true
-}))
+// app.use(cors({
+//     origin: 'http://localhost:3000', // use your actual domain name (or localhost), using * is not recommended
+//     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'HEAD', 'OPTIONS'],
+//     allowedHeaders: ['Content-Type', 'Origin', 'X-Requested-With', 'Accept', 'x-client-key', 'x-client-token', 'x-client-secret', 'Authorization'],
+//     credentials: true
+// }))
 
 // app.options("",cors(corsConfig));
 // // app.use(function (req, res, next) {
@@ -36,6 +36,8 @@ app.use(cors({
 // //     next();
 // //  })
 // app.use(cors(corsConfig));
+
+app.use(cors());
 
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
