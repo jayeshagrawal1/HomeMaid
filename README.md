@@ -29,30 +29,36 @@ interface, enabling seamless navigation through various service categories.
   ## ----ScreenShots----
    
    ### HomePage
-   
-   ![Screenshot (1397)](https://github.com/jayeshagrawal1/HomeMaid/assets/76203067/5e5a2539-789d-43c9-a716-92ecc384a0be)
 
-   ![Screenshot (1398)](https://github.com/jayeshagrawal1/HomeMaid/assets/76203067/21575753-e9c5-461d-b982-4c2a002c548f)
+   ![Screenshot (1397)](https://github.com/jayeshagrawal1/HomeMaid/assets/76203067/4d0e9503-3f52-4f0d-a4b1-87cc623963f6)
+
+   ![Screenshot (1398)](https://github.com/jayeshagrawal1/HomeMaid/assets/76203067/825be90b-ef48-4172-9256-2fe3544e50da)
+
 
    <br>
 
    ### Service
 
-   ![Screenshot (1400)](https://github.com/jayeshagrawal1/HomeMaid/assets/76203067/63a0fe70-7fed-4397-855a-a29ff890f3fd)
+   ![Screenshot (1399)](https://github.com/jayeshagrawal1/HomeMaid/assets/76203067/82ab6da1-ed7d-4406-93c4-749b2a60b96d)
 
-   ![Screenshot (1404)](https://github.com/jayeshagrawal1/HomeMaid/assets/76203067/cb19cd86-5d2d-4c2c-ac32-b5ded40ba843)
+
+   ![Screenshot (1400)](https://github.com/jayeshagrawal1/HomeMaid/assets/76203067/b248e28a-3d0f-4c6f-b3be-8e8035b4d9db)
+
 
    <br>
   
    ### Login SignUp
    
-   ![Screenshot (1402)](https://github.com/jayeshagrawal1/HomeMaid/assets/76203067/d28384d2-af5a-47c5-916f-7346eae43232)
+   ![Screenshot (1402)](https://github.com/jayeshagrawal1/HomeMaid/assets/76203067/eee76941-1032-49a4-bd2f-16e3ee12edbe)
 
-   ![Screenshot (1403)](https://github.com/jayeshagrawal1/HomeMaid/assets/76203067/74ef3a1b-355e-4e2b-b214-c53d040e8ae9)
+
+   ![Screenshot (1403)](https://github.com/jayeshagrawal1/HomeMaid/assets/76203067/99ca37b7-ee95-4d8f-adc4-1aeb67795db6)
+
 
    <br>
 
    ### Contact Us 
 
-   ![Screenshot (1401)](https://github.com/jayeshagrawal1/HomeMaid/assets/76203067/941c0622-d8f8-4ed9-8dcd-9a747a9a4ff4)
+   ![Screenshot (1401)](https://github.com/jayeshagrawal1/HomeMaid/assets/76203067/ad771516-aba9-449e-961b-ec2fdc6c7e77)
+
 
