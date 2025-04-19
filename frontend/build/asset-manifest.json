@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.98b59f8a.css",
+    "main.js": "/static/js/main.c69615eb.js",
+    "static/media/all rounder.png": "/static/media/all rounder.7f5ece09be1d2e5be110.png",
+    "static/media/cooks.jpg": "/static/media/cooks.efb7bedd886c4d763e95.jpg",
+    "static/media/domestic help.jpg": "/static/media/domestic help.66774f61b37578958516.jpg",
+    "static/media/icon-fd.jpg": "/static/media/icon-fd.8d209f991053e948d88a.jpg",
+    "static/media/babysitter.jpg": "/static/media/babysitter.fc488a939bfdf9d2152d.jpg",
+    "static/media/icon_baby_care.jpg": "/static/media/icon_baby_care.49c907a6c93849b8df99.jpg",
+    "static/media/icon_cook_chef.jpg": "/static/media/icon_cook_chef.59af98dbc6b78d051ee2.jpg",
+    "static/media/greenTick.png": "/static/media/greenTick.31b51ab060bcb834ac9b.png",
+    "static/media/icon_dom.jpg": "/static/media/icon_dom.aff96ec8a722b4c8b279.jpg",
+    "static/media/banner-right1.png": "/static/media/banner-right1.4597916c631cee794723.png",
+    "static/media/not-found.png": "/static/media/not-found.e1e478ea7708600b1b79.png",
+    "static/media/Group 19080.svg": "/static/media/Group 19080.56ccd8f9a85455f43d1b41e77b1cbcf9.svg",
+    "static/media/output-onlinepngtools (2).png": "/static/media/output-onlinepngtools (2).24e4aea95d40e51fe355.png",
+    "static/media/Mystar.svg": "/static/media/Mystar.03fbea46de24512633c231cc5c99cf85.svg",
+    "index.html": "/index.html",
+    "main.98b59f8a.css.map": "/static/css/main.98b59f8a.css.map",
+    "main.c69615eb.js.map": "/static/js/main.c69615eb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.98b59f8a.css",
+    "static/js/main.c69615eb.js"
+  ]
+}
