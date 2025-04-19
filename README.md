@@ -30,36 +30,34 @@ interface, enabling seamless navigation through various service categories.
    
    ### HomePage
 
-   ![Screenshot (1397)](https://github.com/jayeshagrawal1/HomeMaid/assets/76203067/4d0e9503-3f52-4f0d-a4b1-87cc623963f6)
-
-   ![Screenshot (1398)](https://github.com/jayeshagrawal1/HomeMaid/assets/76203067/825be90b-ef48-4172-9256-2fe3544e50da)
-
+  ![homePage](https://github.com/user-attachments/assets/7e31f3ef-e8f0-44d6-9ce9-ca257a99794c)
+  
+  ![body](https://github.com/user-attachments/assets/b57ce9a6-6b05-44bb-8874-4df997bcae75)
 
    <br>
 
    ### Service
+![services](https://github.com/user-attachments/assets/6c353577-41a9-461f-884a-305aa804ebc3)
 
-   ![Screenshot (1399)](https://github.com/jayeshagrawal1/HomeMaid/assets/76203067/82ab6da1-ed7d-4406-93c4-749b2a60b96d)
+   ![services1](https://github.com/user-attachments/assets/fc590d5e-662f-42a1-9397-b46016081515)
 
-
-   ![Screenshot (1400)](https://github.com/jayeshagrawal1/HomeMaid/assets/76203067/b248e28a-3d0f-4c6f-b3be-8e8035b4d9db)
 
 
    <br>
   
    ### Login SignUp
    
-   ![Screenshot (1402)](https://github.com/jayeshagrawal1/HomeMaid/assets/76203067/eee76941-1032-49a4-bd2f-16e3ee12edbe)
+   ![signup](https://github.com/user-attachments/assets/9fb5ad8b-1280-4281-a49f-ce5f8a88c73d)
 
-
-   ![Screenshot (1403)](https://github.com/jayeshagrawal1/HomeMaid/assets/76203067/99ca37b7-ee95-4d8f-adc4-1aeb67795db6)
+ ![login](https://github.com/user-attachments/assets/08a88409-ea96-4a6c-b270-71b6cb224185)
 
 
    <br>
 
    ### Contact Us 
 
-   ![Screenshot (1401)](https://github.com/jayeshagrawal1/HomeMaid/assets/76203067/ad771516-aba9-449e-961b-ec2fdc6c7e77)
+   ![contact us](https://github.com/user-attachments/assets/d7b40dd6-c645-4c02-8f42-a4521b55e18f)
+
 
 
 # HomeMaid
