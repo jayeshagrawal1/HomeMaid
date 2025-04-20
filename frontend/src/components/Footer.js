@@ -1,38 +1,58 @@
-import React from 'react'
-import { AiFillFacebook, AiFillLinkedin, AiFillYoutube, AiOutlineInstagram, AiOutlineTwitter } from 'react-icons/ai'
+import React from 'react';
+import {
+  AiFillFacebook,
+  AiFillLinkedin,
+  AiFillYoutube,
+  AiOutlineInstagram,
+  AiOutlineTwitter,
+} from 'react-icons/ai';
 
 const Footer = () => {
-    return (
-        <div>
-            <div className=' border-t-[1px] border-[#AFB2BF] mt-9'></div>
+  return (
+    <footer className='bg-richblack-900 text-[#AFB2BF] pt-8 px-4'>
+      <div className='w-full h-[1px] bg-white/10 mb-8'></div>
 
-            <div className='flex flex-col justify-between items-center w-11/12 max-w-[1160px] mx-auto py-4 text-[#AFB2BF]'>
-                <div className='w-11/12 max-w-[1160px] flex items-center justify-between'>
-                    <div className='flex flex-col gap-1 justify-center items-center'>
-                        <p className='text-md font-semibold'>Contact Us</p>
-                        <p className='text-sm'>9xxxxxxxxx</p>
-                        <p className='text-sm'>support@xyz.com</p>
-                    </div>
-
-                    <div className='flex max-w-[300px] gap-1'>
-                        <AiFillLinkedin fontSize={30} fill='#AFB2BF' className='hover:scale-110 ease-in duration-300 cursor-pointer ml-16' />
-                        <AiOutlineInstagram fontSize={30} fill='#AFB2BF' className='hover:scale-110 ease-in duration-300 cursor-pointer' />
-                        <AiFillFacebook fontSize={30} fill='#AFB2BF' className='hover:scale-110 ease-in duration-300 cursor-pointer' />
-                        <AiFillYoutube fontSize={30} fill='#AFB2BF' className='hover:scale-110 ease-in duration-300 cursor-pointer' />
-                        <AiOutlineTwitter fontSize={30} fill='#AFB2BF' className='hover:scale-110 ease-in duration-300 cursor-pointer' />
-                    </div>
-                    <div className='flex flex-col gap-1 justify-center items-center'>
-                        <p className='text-md font-semibold'>Address</p>
-                        <p className='text-sm'>Lig-18A,Kalpana Nagar,Bhopal</p>
-                        <p className='text-sm'>462022</p>
-                    </div>
-                </div>
-                <div>
-                    <p>Copyright © 2023 HomeMaid - All rights reserved</p>
-                </div>
-            </div>
+      <div className='w-11/12 max-w-[1160px] mx-auto flex flex-col md:flex-row justify-between items-center gap-y-8 md:gap-y-0'>
+        {/* Contact Section */}
+        <div className='text-center md:text-left'>
+          <p className='text-md font-semibold text-white'>Contact Us</p>
+          <p className='text-sm mt-1'>9xxxxxxxxx</p>
+          <p className='text-sm'>homemaid2002@gmail.com</p>
         </div>
-    )
-}
 
-export default Footer
+        {/* Social Media Icons */}
+        <div className='flex gap-4 justify-center'>
+          <a href='https://linkedin.com' target='_blank' rel='noopener noreferrer'>
+            <AiFillLinkedin className='text-2xl hover:text-yellow-50 transition-transform hover:scale-110' />
+          </a>
+          <a href='https://instagram.com' target='_blank' rel='noopener noreferrer'>
+            <AiOutlineInstagram className='text-2xl hover:text-yellow-50 transition-transform hover:scale-110' />
+          </a>
+          <a href='https://facebook.com' target='_blank' rel='noopener noreferrer'>
+            <AiFillFacebook className='text-2xl hover:text-yellow-50 transition-transform hover:scale-110' />
+          </a>
+          <a href='https://youtube.com' target='_blank' rel='noopener noreferrer'>
+            <AiFillYoutube className='text-2xl hover:text-yellow-50 transition-transform hover:scale-110' />
+          </a>
+          <a href='https://twitter.com' target='_blank' rel='noopener noreferrer'>
+            <AiOutlineTwitter className='text-2xl hover:text-yellow-50 transition-transform hover:scale-110' />
+          </a>
+        </div>
+
+        {/* Address Section */}
+        <div className='text-center md:text-right'>
+          <p className='text-md font-semibold text-white'>Address</p>
+          <p className='text-sm mt-1'>Sector-19, Koparkhairne, Navi Mumbai</p>
+          <p className='text-sm'>400709</p>
+        </div>
+      </div>
+
+      {/* Copyright */}
+      <div className='mt-8 text-center text-sm text-gray-500'>
+        © {new Date().getFullYear()} <span className='text-yellow-50 font-semibold'>HomeMaid</span> — All rights reserved
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

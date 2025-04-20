@@ -19,8 +19,8 @@ const Home = () => {
           <div className=' flex flex-col items-start'>
             <h1 className='text-5xl font-bold tracking-wide mt-2'>INDIA'S </h1>
             <h1 className='text-5xl font-bold tracking-wide mt-2'>TRUSTED </h1>
-            <h1 className='text-5xl font-bold tracking-wide mt-2'> HOME MAKERS</h1>
-            <p className='text-xl tracking-wide mt-9 sm:w-[400px] leading-7'>HomeMaid is the simplest way to get your life in order with the right domestic help</p>
+            <h1 className='text-yellow-50 text-5xl font-bold tracking-wide mt-2'> HOME MAKERS</h1>
+            <p className='text-richblack-100 text-xl tracking-wide mt-9 sm:w-[400px] leading-7'>HomeMaid is the simplest way to get your life in order with the right domestic help</p>
             <button onClick={clickHandler}
             className='text-white mt-9 rounded-[8px] font-medium uppercase p-3 border border-richblack-700 hover:bg-[#08111f] hover:text-yellow-50 transition-all duration-200'> Book Now</button>
           </div>
