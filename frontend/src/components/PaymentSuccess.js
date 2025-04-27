@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import tick from "../images/greenTick.png"
-import { baseUrl } from './url'
 
 const PaymentSuccess = () => {
 
@@ -9,7 +8,7 @@ const PaymentSuccess = () => {
     const saveProductInfo = async () => {
         try {
             //get user info firsxt
-            const res = await fetch(`${baseUrl}/getUser`, {
+            const res = await fetch(`${process.env.REACT_APP_API_URL}/getUser`, {
                 method: "GET",
                 headers: {
                     Accept: "application/json",
@@ -26,7 +25,7 @@ const PaymentSuccess = () => {
             const refrence_id=urlElements[1];
             const {serviceType,duration,price}=JSON.parse(window.localStorage.getItem('userServiceCart'));
             
-            const response = await fetch(`${baseUrl}/saveBooking`, {
+            const response = await fetch(`${process.env.REACT_APP_API_URL}/saveBooking`, {
                 method: "POST",
                 headers: {
                     Accept: "application/json",

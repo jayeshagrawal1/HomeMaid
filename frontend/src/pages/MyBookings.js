@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Spinner from "../components/Spinner";
 import BookingCard from "../components/BookingCard";
-import { baseUrl } from '../components/url';
 
 const MyBookings = () => {
   const [outputArr, setOutputArr] = useState([]);
@@ -11,7 +10,7 @@ const MyBookings = () => {
   const viewBookings = async () => {
     try {
       // Get user info first
-      const res = await fetch(`${baseUrl}/getUser`, {
+      const res = await fetch(`${process.env.REACT_APP_API_URL}/getUser`, {
         method: "GET",
         headers: {
           Accept: "application/json",
@@ -24,7 +23,7 @@ const MyBookings = () => {
 
       // Retrieving all bookings of the current user
       const { email } = data;
-      const response = await fetch(`${baseUrl}/showBookings`, {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/showBookings`, {
         method: "GET",
         headers: {
           Accept: "application/json",

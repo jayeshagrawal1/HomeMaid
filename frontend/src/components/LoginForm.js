@@ -3,7 +3,6 @@ import { AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai';
 import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'react-hot-toast';
 import { userContext } from '../App';
-import { baseUrl } from './url';
 
 const LoginForm = () => {
   const { state, dispatch } = useContext(userContext);
@@ -26,8 +25,7 @@ const LoginForm = () => {
   const submitHandler = async (event) => {
     event.preventDefault();
     const { email, password } = formData;
-
-    const res = await fetch(`${baseUrl}/signin`, {
+    const res = await fetch(`${process.env.REACT_APP_API_URL}/signin`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

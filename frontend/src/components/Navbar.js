@@ -2,14 +2,13 @@ import React, { useContext } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { toast } from 'react-hot-toast';
 import { userContext } from '../App';
-import { baseUrl } from './url';
 
 const Navbar = () => {
 
     const { state, dispatch } = useContext(userContext);
 
     function logOutHandler() {
-        fetch(`${baseUrl}/logout`, {
+        fetch(`${process.env.REACT_APP_API_URL}/logout`, {
             method: 'GET',
             headers: {
                 "Content-Type": "application/json",

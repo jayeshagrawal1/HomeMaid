@@ -4,7 +4,6 @@ import payment from '../images/payment.png';
 import axios from 'axios';
 import { userContext } from '../App';
 import { useNavigate } from 'react-router-dom';
-import { baseUrl } from './url';
 
 const Popup = ({ serviceType, setTrigger, trigger }) => {
     const { state } = useContext(userContext);
@@ -24,19 +23,21 @@ const Popup = ({ serviceType, setTrigger, trigger }) => {
             return;
         }
 
-        const { data: { order } } = await axios.post(`${baseUrl}/payment/checkout`, { amount });
+        console.log("Payment",`${process.env.REACT_APP_API_URL}`);
+        
+        const { data: { order } } = await axios.post(`${process.env.REACT_APP_API_URL}/payment/checkout`, { amount });
 
         const options = {
-            key: "rzp_test_HYK44ARz18AaDT",
+            key: `${process.env.REACT_APP_RAZORPAY_KEY}`,
             amount: order.amount,
             currency: "INR",
             name: "HomeMaid",
             description: "For service charge only",
             image: payment,
             order_id: order.id,
-            callback_url: "/payment/verify",
+            callback_url: `${process.env.REACT_APP_API_URL}/payment/verify`,
             prefill: {
-                name: "XYZ",
+                name: "",
                 email: "xyz@example.com",
                 contact: "9999999999"
             },

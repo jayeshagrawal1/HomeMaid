@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai';
 import { toast } from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
-import { baseUrl } from './url';
 
 const SignupForm = () => {
   const navigate = useNavigate();
@@ -35,7 +34,7 @@ const SignupForm = () => {
       return;
     }
 
-    const res = await fetch(`${baseUrl}/register`, {
+    const res = await fetch(`${process.env.REACT_APP_API_URL}/register`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
