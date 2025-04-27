@@ -1,13 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { toast } from 'react-hot-toast';
 import flag from '../images/Group 19080.svg';
-import {
-  AiFillLinkedin,
-  AiOutlineInstagram,
-  AiFillFacebook,
-  AiOutlineTwitter,
-  AiFillYoutube,
-} from 'react-icons/ai';
 import emailjs from '@emailjs/browser';
 import Lottie from 'lottie-react';
 import contactAnimation from '../../src/lottie/contactus.json';
