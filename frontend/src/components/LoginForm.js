@@ -34,15 +34,16 @@ const LoginForm = () => {
         email,
         password
       }),
-      credentials: 'include'
     });
 
     const data = await res.json();
+
     if (res.status === 400 || !data) {
       toast.error('Invalid Credentials');
     } else {
       dispatch({ type: 'USER', payload: true });
       window.localStorage.setItem('isLoggedIn', true);
+      window.localStorage.setItem('authToken', data.token);
       toast.success('Logged In');
       navigate('/');
     }

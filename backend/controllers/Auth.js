@@ -19,13 +19,6 @@ async function handleCheckUser(req, res) {
                 res.status(400).json({ err: "Invalid credentials" })
             }
             else {
-                // const token = await userLogin.generateAuthToken();
-
-                // res.cookie('jwtoken', token, {
-                //     expires: new Date(Date.now() + 2592000000),
-                //     httpOnly: true
-                // });
-                // res.json({ msg: "user signin successfully" })
                 generateToken(userLogin, 200, res);
             }
         }
@@ -48,14 +41,15 @@ const generateToken = async (userLogin, statusCode, res) => {
         expires: new Date(Date.now() + 2592000000)
     };
 
-    res.status(statusCode)
-        .cookie("token", token, options)
-        .json({ success: true, token });
+    res.status(statusCode).json({
+        success: true,
+        message: "User signed in successfully",
+        token,
+    });
 }
 
 const handleLogOutUser = (req, res) => {
-    res.clearCookie('token',{path:"/"})
-        .status(200)
+    res .status(200)
         .json({success:true,message:"Logged out successfully"});
 }
 

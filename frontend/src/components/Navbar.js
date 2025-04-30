@@ -16,8 +16,8 @@ const Navbar = () => {
         }).then(res => {
 
             dispatch({ type: "USER", payload: false });
-            // window.localStorage.setItem('isLoggedIn',false);
             window.localStorage.removeItem("isLoggedIn");
+            window.localStorage.removeItem("authToken");
             toast.success("Logged Out");
 
             if (res.status !== 200) {

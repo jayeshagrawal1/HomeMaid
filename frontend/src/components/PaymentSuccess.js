@@ -13,9 +13,8 @@ const PaymentSuccess = () => {
                 headers: {
                     Accept: "application/json",
                     "Content-Type": "application/json",
-
+                    Authorization: `Bearer ${localStorage.getItem("authToken")}`
                 },
-                credentials: "include"
             });
 
             const data = await res.json();
